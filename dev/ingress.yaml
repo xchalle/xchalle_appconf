@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   name: xchalle-playground-ingress
   namespace: dev
+  annotations:
+    traefik.ingress.kubernetes.io/redirect-entry-point: https
 spec:
   rules:
   - http:
