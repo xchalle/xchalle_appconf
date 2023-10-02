@@ -1,15 +1,16 @@
-apiVersion: networking.k8s.io/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: xchalle-playground-ingress
+  namespace: dev
 spec:
   rules:
-  -http:
-    paths:
-    - path: /
-      pathType: Prefix
-      backend:
-        service:
-          name: xchalle-playground-service
-          port:
-            number: 8888
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: xchalle-playground-service
+            port:
+              number: 8888
