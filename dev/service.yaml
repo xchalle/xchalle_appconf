@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: xchalle-playground-service
+  name: xchalle-bonus-playground-service
 spec:
   selector:
-    app: xchalle-playground
+    app: xchalle-bonus-playground
   ports:
   - name: http
     protocol: TCP
-    port: 8888
-    targetPort: 8888
+    port: 8889
+    targetPort: 8889

@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: xchalle-playground-deployement
+  name: xchalle-bonus-playground-deployement
   labels:
-    app: xchalle-playground
+    app: xchalle-bonus-playground
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: xchalle-playground
+      app: xchalle-bonus-playground
   template:
     metadata:
       labels:
-        app: xchalle-playground
+        app: xchalle-bonus-playground
     spec:
       containers:
-      - name : xchalle-playground
+      - name : xchalle-bonus-playground
         image: wil42/playground:v2
         ports:
-        - containerPort: 8888
+        - containerPort: 8889

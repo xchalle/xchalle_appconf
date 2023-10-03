@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: xchalle-playground-ingress
+  name: xchalle-bonus-playground-ingress
   namespace: dev
   annotations:
     traefik.ingress.kubernetes.io/redirect-entry-point: https
@@ -13,6 +13,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: xchalle-playground-service
+            name: xchalle-bonus-playground-service
             port:
-              number: 8888
+              number: 8889
