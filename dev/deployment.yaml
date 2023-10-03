@@ -18,4 +18,4 @@ spec:
       - name : xchalle-bonus-playground
         image: wil42/playground:v1
         ports:
-        - containerPort: 8889
+        - containerPort: 8888
