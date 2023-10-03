@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: xchalle-bonus-playground-ingress
-  namespace: dev
+  namespace: gitlab
   annotations:
     traefik.ingress.kubernetes.io/redirect-entry-point: https
 spec:
